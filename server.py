@@ -5,3 +5,6 @@ app = Flask(__name__)
 def index():
     return "Hello World"
 
+@app.route("/login")
+def login():
+    return "login.html"
