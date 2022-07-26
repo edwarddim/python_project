@@ -5,3 +5,9 @@ app = Flask(__name__)
 def index():
     return "Hello World"
 
+
+@app.route('/register', methods=["post"])
+def register():
+    User.save(request.form)
+    return redirect('/dashboard')
+
