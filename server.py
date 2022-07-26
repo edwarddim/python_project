@@ -11,3 +11,8 @@ def register():
     User.save(request.form)
     return redirect('/dashboard')
 
+
+@app.route("/login")
+def login():
+    return "login.html"
+
