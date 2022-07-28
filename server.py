@@ -19,3 +19,7 @@ def login():
 @app.route("/create_recipe")
 def create():
     return "create.html"
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
