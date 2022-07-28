@@ -16,3 +16,6 @@ def register():
 def login():
     return "login.html"
 
+@app.route("/create_recipe")
+def create():
+    return "create.html"
