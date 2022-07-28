@@ -20,6 +20,11 @@ def login():
 def create():
     return "create.html"
 
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
+
 @app.route("/update")
 def update():
     return "edit.html"
+
